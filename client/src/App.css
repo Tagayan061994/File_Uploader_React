@@ -1,0 +1,15 @@
+body {
+    background-color: aquamarine;
+}
+
+input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block {
+    width: 40%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    margin-block-end: 2.5rem;
+    margin-left: 25px;
+}
