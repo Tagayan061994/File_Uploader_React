@@ -7,28 +7,23 @@ const Form = (props) => {
     education: '',
     file: null,
   });
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     await props.setUserDetails(state);
     await props.history.push('registration');
   };
-
   const handleChangeName = (event) => {
     setState({
       ...state,
       [event.target.name]: event.target.value,
     });
   };
-
-
   const editHandler = (file) => {
-    console.log(file);
     setState({
       ...state,
       file,
     });
-  }
+  };
 
   return (
     <form>
@@ -61,8 +56,7 @@ const Form = (props) => {
       registerHandler={handleSubmit}
      />
   </form>
-  
   )
-}
+};
 
 export default Form;

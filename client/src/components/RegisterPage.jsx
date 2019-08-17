@@ -8,11 +8,14 @@ const RegisterPage = (props) => {
         <div className='col-md-6 m-auto'>
           <img 
             style={{ 
-            width: '50%', 
-            borderRadius: "50%", 
-            display: 'block', 
-            margin: "0 auto" }}
-            src={props.userDetails.file.filePath} alt='' />
+              width: '50%', 
+              borderRadius: "50%", 
+              display: 'block', 
+              margin: "0 auto" 
+            }}
+            src={props.userDetails.file.filePath}
+            alt={props.userDetails.file.filePath} 
+          />
         </div>
         <div style={{ width: '15%' }}>
             {props.userDetails.name}
